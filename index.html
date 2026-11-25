@@ -3,13 +3,13 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#030910">
 <title>JARBAS HUD</title>
 <link rel="apple-touch-icon" href="icon%20-%20Jarbas.png">
 <link rel="icon" type="image/png" href="icon%20-%20Jarbas.png">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 <style>
 * {
@@ -23,7 +23,7 @@ body {
   color: #65dfff;
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 30px 18px;
+  padding: calc(15px + env(safe-area-inset-top)) 18px calc(15px + env(safe-area-inset-bottom));
 }
 
 header {
